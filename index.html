@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Booter : A predefined structure to kick your Web Apps" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Booter</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/seba-1511/Booter">View on GitHub</a>
+
+          <h1 id="project_title">Booter</h1>
+          <h2 id="project_tagline">A predefined structure to kick your Web Apps</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/seba-1511/Booter/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/seba-1511/Booter/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Booter</h1>
+
+<p>The Booter Project: A predefined structure to kick your projects. This includes:</p>
+
+<ul>
+<li>CodeIgniter 2.1.3 (With some default configuration. Ex: Autoload, Cookies, etc...)</li>
+<li>jQuery 1.9 and jQuery 2.0 to best match your targeted visitors</li>
+<li>jQuery UI 1.10.3 not themed</li>
+<li>jQuery Mobile 1.3.1</li>
+<li>Bootstrap 2.3.1 JS and CSS</li>
+<li>Less 1.3.3</li>
+<li>HandleBarsJS 1.0.0</li>
+<li>Glyphish Pro 3.0 Icons</li>
+<li>Custom Scripts</li>
+</ul><h1>Notes on Custom Scripts</h1>
+
+<h2>CodeIgniter's Layout Library</h2>
+
+<p>As we don't want to always load the same Headers, Footers, etc... of the page, we implemented a library to do this for us. The principle is that you add views, that will be stored in the class. Then by simply calling the printPage function with</p>
+
+<div class="highlight"><pre> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">layout</span><span class="o">-&gt;</span><span class="na">printPage</span><span class="p">();</span>
+</pre></div>
+
+<p>the whole page will be printed. Note that you can also add a JS, CSS and set the title by simply calling the librarie's methods. See an example in the welcome controler.</p>
+
+<p>Also, you can set your own default layouts by creating them in the views/layout folder.</p>
+
+<p><strong>IMPORTANT: The Layout Library is imported by default, so remove it in autoload if you don't use it !</strong> </p>
+
+<h2>CodeIgniter CRUD Model</h2>
+
+<p>The file application/core/MY_CRUD.php implements a basic CRUD implementation. (With count option) The easiest way to understand it is to read the file. We highly recommend to use it as a core function for the different models you'll build, by doing so:</p>
+
+<div class="highlight"><pre> <span class="k">class</span> <span class="nc">User_model</span> <span class="k">extends</span> <span class="nx">MY_CRUD</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$table</span> <span class="o">=</span> <span class="s1">'users'</span><span class="p">;</span>
+<span class="p">}</span>
+
+</pre></div>
+
+<h2>License</h2>
+
+<p>Copyright (C) 2013 Sébastien Arnold</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Booter maintained by <a href="https://github.com/seba-1511">seba-1511</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
