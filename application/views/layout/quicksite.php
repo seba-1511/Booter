@@ -12,10 +12,10 @@
 	?>
 </head>
 <body>
-	<nav class="navbar">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container offset1">
-				<a class="brand" href="#">Brand</a>
+			<div class="container offset1 span11">
+				<a class="brand" href="<?php echo base_url(); ?>">Brand</a>
 				<ul class="nav">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#">Link</a></li>
@@ -30,17 +30,18 @@
 					</li>
 				</ul>
 
-				<form class="navbar-search pull-right">
+				<form class="navbar-search offset5">
 					<input type="text" class="search-query" placeholder="Search">
 				</form>
 			</div>
 		</div>
 	</nav>
-	<div class="container offset1 span11">
-		<div class="pull-right">
-			<?php
-			echo $output;
-			?>
+	<div class="container offset1 span11" style="margin-top:50px;">
+		<?php
+		echo $output;
+		?>
+		<div id="dialog" class="alert fade in" title="Basic dialog">
+			<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
 		</div>
 	</div>
 
@@ -49,7 +50,7 @@
 	<script src="<?php echo base_url(); ?>assets/js/jqueryui-1.10.3.js" type="text/javascript" charset="utf-8" defer></script>
 	<script src="<?php echo base_url(); ?>assets/js/bootstrap.js" type="text/javascript" charset="utf-8" defer></script>
 	<script src="<?php echo base_url(); ?>assets/js/handlebars.js" type="text/javascript" charset="utf-8" defer></script>
-	<script src="<?php echo base_url(); ?>assets/js/less.js" type="text/javascript" charset="utf-8" defer></script>
+	<script src="<?php echo base_url(); ?>assets/js/less-1.3.3.js" type="text/javascript" charset="utf-8" defer></script>
 	<?php
 	echo $js;
 	?>
