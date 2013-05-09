@@ -222,9 +222,9 @@ $config['cache_path'] = '';
 |
 | If you use the Encryption class or the Session class you
 | MUST set an encryption key.  See the user guide for info.
-|
+| Currently generated from: http://jeffreybarke.net/tools/codeigniter-encryption-key-generator/
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'XWUhfqibC2daowqJKlU3hzN5vhqsHNU3';
 
 /*
 |--------------------------------------------------------------------------

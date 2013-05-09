@@ -8,4 +8,5 @@ The Booter Project: A predefined structure to kick your projects. This includes:
 * Bootstrap 2.3.1 JS and CSS
 * Less 1.3.3
 * HandleBarsJS 1.0.0
-* Glyphish 3.0 Icons
+* Glyphish Pro 3.0 Icons
+* Custom Scripts
