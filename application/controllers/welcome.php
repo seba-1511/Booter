@@ -17,9 +17,14 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function index($name = 'World')
 	{
-		$this->load->view('welcome_message');
+		$this->layout->addView('welcome_message', array('name' => $name));
+		// Uncomment to see how the methods work
+		// $this->layout->setTitle('Hi '.$name);
+		// $this->layout->addCSS('<style>h1 {color:blue;}</style>');
+		// $this->layout->addJS('<script>alert("Hi !");</script>');
+		$this->layout->printPage();
 	}
 }
 

@@ -10,3 +10,8 @@ The Booter Project: A predefined structure to kick your projects. This includes:
 * HandleBarsJS 1.0.0
 * Glyphish Pro 3.0 Icons
 * Custom Scripts
+
+# Notes on Custom Scripts
+
+## CI's Layout Library
+As we don't want to always load the same Headers, Footers, etc... of the page, we implemented a library to do this for us. The principle is that you add views, that will be stored in the class. Then by simply calling the printPage function with $this->layout->printPage() the whole page will be printed. Note that you can also add a JS, CSS and set the title by simply calling the librarie's methods. See an example in the welcome controler.
