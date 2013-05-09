@@ -21,7 +21,11 @@ As we don't want to always load the same Headers, Footers, etc... of the page, w
  ``` 
  the whole page will be printed. Note that you can also add a JS, CSS and set the title by simply calling the librarie's methods. See an example in the welcome controler.
 
- Also, you can set your own default layouts by creating them in the views/layout folder.
+ Also, you can set your own default layouts by creating them in the views/layout folder. By default, there are only 4 of them:
+ * **default** Just an empty HTML5 layout
+ * **basic** Only main JavScripts and CSS are imported
+ * **quicksite** The starting point for a project, with some elements of Bootstrap
+ * **Mobile** A simple web app with header and footer
 
  **IMPORTANT: The Layout Library is imported by default, so remove it in autoload if you don't use it !** 
 

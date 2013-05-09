@@ -40,9 +40,6 @@
 		<?php
 		echo $output;
 		?>
-		<div id="dialog" class="alert fade in" title="Basic dialog">
-			<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-		</div>
 	</div>
 
 	<!-- Script Loading -->
