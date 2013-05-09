@@ -24,6 +24,7 @@ class Welcome extends CI_Controller {
 		// $this->layout->setTitle('Hi '.$name);
 		// $this->layout->addCSS('<style>h1 {color:blue;}</style>');
 		// $this->layout->addJS('<script>alert("Hi !");</script>');
+		// $this->layout->addJS('<script src="'.base_url().'assets/js/booter.utils.js" type="text/javascript" charset="utf-8" defer></script>');
 		// $this->layout->setLayout('mobile');
 		$this->layout->setlayout('quicksite');
 		$this->layout->printPage();

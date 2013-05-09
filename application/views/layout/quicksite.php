@@ -48,6 +48,7 @@
 	<script src="<?php echo base_url(); ?>assets/js/bootstrap.js" type="text/javascript" charset="utf-8" defer></script>
 	<script src="<?php echo base_url(); ?>assets/js/handlebars.js" type="text/javascript" charset="utf-8" defer></script>
 	<script src="<?php echo base_url(); ?>assets/js/less-1.3.3.js" type="text/javascript" charset="utf-8" defer></script>
+	<script src="<?php echo base_url(); ?>assets/js/booter.utils.js" type="text/javascript" charset="utf-8" defer></script>
 	<?php
 	echo $js;
 	?>

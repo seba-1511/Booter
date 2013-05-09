@@ -25,7 +25,7 @@ As we don't want to always load the same Headers, Footers, etc... of the page, w
  * **default** Just an empty HTML5 layout
  * **basic** Only main JavScripts and CSS are imported
  * **quicksite** The starting point for a project, with some elements of Bootstrap
- * **Mobile** A simple web app with header and footer
+ * **mobile** A simple web app with header and footer
 
  **IMPORTANT: The Layout Library is imported by default, so remove it in autoload if you don't use it !** 
 
@@ -38,6 +38,11 @@ As we don't want to always load the same Headers, Footers, etc... of the page, w
 }
 
  ```
+## Booter JS
+Booter has its own JavaScript Class, found in the file assets/js/booter.utils.js. This file has some functions that I found usefull, and that can be used in about any projects. To use it, just call 
+```javascript
+booter.theNameOfThePublicMethod();
+```
 
 ## License
 
