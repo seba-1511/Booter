@@ -81,7 +81,7 @@ public function addCSS ($css) {
 }
 
 public function setLayout ($layout) {
-	if(is_string($layout) AND !empty($layout) AND file_exists('layout/' . $layout . '.php'))
+	if(is_string($layout) AND !empty($layout) AND file_exists('./application/views/layout/' . $layout . '.php'))
 	{
 		$this->layout = $layout;
 		return true;

@@ -3,9 +3,6 @@
 <head>
 	<title><?php echo $title ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css" />
-	<link href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jqueryui-1.10.3.css" />
 	<?php
 	echo $css;
 	?>
@@ -16,11 +13,6 @@
 	?>
 
 	<!-- Script Loading -->
-	<script src="<?php echo base_url(); ?>assets/js/jquery-2.0.0.js" type="text/javascript" charset="utf-8" defer></script>
-	<script src="<?php echo base_url(); ?>assets/js/jqueryui-1.10.3.js" type="text/javascript" charset="utf-8" defer></script>
-	<script src="<?php echo base_url(); ?>assets/js/bootstrap.js" type="text/javascript" charset="utf-8" defer></script>
-	<script src="<?php echo base_url(); ?>assets/js/handlebars.js" type="text/javascript" charset="utf-8" defer></script>
-	<script src="<?php echo base_url(); ?>assets/js/less.js" type="text/javascript" charset="utf-8" defer></script>
 	<?php
 	echo $js;
 	?>

@@ -24,6 +24,7 @@ class Welcome extends CI_Controller {
 		// $this->layout->setTitle('Hi '.$name);
 		// $this->layout->addCSS('<style>h1 {color:blue;}</style>');
 		// $this->layout->addJS('<script>alert("Hi !");</script>');
+		// $this->layout->setLayout('default');
 		$this->layout->printPage();
 	}
 }
