@@ -11,9 +11,27 @@
 	?>
 </head>
 <body>
-	<?php
-	echo $output;
-	?>
+	<div data-role="page" data-add-back-btn="true">
+
+		<div data-role="header">
+			<a data-icon="back" data-rel="back">Back</a>
+			<h1><?php echo $title; ?></h1>
+			<a data-icon="home" href="<?php echo base_url(); ?>">Home</a>
+		</div><!-- /header -->
+
+		<div data-role="content">
+
+		<?php
+		echo $output;
+		?>
+
+		</div><!-- /content -->
+
+		<div data-role="footer">
+			<h1>made with Booter</h1>
+		</div><!-- /footer -->
+
+	</div>
 
 	<!-- Script Loading -->
 	<script src="<?php echo base_url(); ?>assets/js/jquery-2.0.0.js" type="text/javascript" charset="utf-8" defer></script>
