@@ -24,7 +24,7 @@ As we don't want to always load the same Headers, Footers, etc... of the page, w
 
  **IMPORTANT: The Layout Library is imported by default, so remove it in autoload if you don't use it !** 
 
- ## CodeIgniter CRUD Model
+## CodeIgniter CRUD Model
  The file application/core/MY_CRUD.php implements a basic CRUD implementation. (With count option) The easiest way to understand it is to read the file. We highly recommend to use it as a core function for the different models you'll build, by doing so:
  ```php
  class User_model extends MY_CRUD
