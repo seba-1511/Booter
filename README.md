@@ -14,4 +14,10 @@ The Booter Project: A predefined structure to kick your projects. This includes:
 # Notes on Custom Scripts
 
 ## CI's Layout Library
-As we don't want to always load the same Headers, Footers, etc... of the page, we implemented a library to do this for us. The principle is that you add views, that will be stored in the class. Then by simply calling the printPage function with $this->layout->printPage() the whole page will be printed. Note that you can also add a JS, CSS and set the title by simply calling the librarie's methods. See an example in the welcome controler.
+As we don't want to always load the same Headers, Footers, etc... of the page, we implemented a library to do this for us. The principle is that you add views, that will be stored in the class. Then by simply calling the printPage function with
+ ```php
+ $this->layout->printPage();
+ ``` 
+ the whole page will be printed. Note that you can also add a JS, CSS and set the title by simply calling the librarie's methods. See an example in the welcome controler.
+
+ **IMPORTANT: The Layout Library is imported by default, so remove it in autoload if you don't use it !** 
