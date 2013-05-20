@@ -44,6 +44,16 @@ Booter has its own JavaScript Class, found in the file assets/js/booter.utils.js
 booter.theNameOfThePublicMethod();
 ```
 
+## Configuration
+Here are the basic steps you have to do to get your working environment ready:
+**PHP**
+* Define the base_url var in config.php
+* Check the Cookies encryption key, and chenge it.
+* Change the DB connection credentials
+
+**JS**
+* Change the base_url var in booter.utils.js
+
 ## License
 
 Copyright (C) 2013 Sébastien Arnold
