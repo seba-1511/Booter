@@ -7,7 +7,7 @@ var booter = (function() {
 	};
 
 	return {
-
+        
 		myPublic: function (arg) {
 			return arg;
 		}
