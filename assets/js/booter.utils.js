@@ -9,8 +9,8 @@ Ideas of what to implement:
 - isEmail function
 - encrypt/decrypt with php on the other side
 */
-var booter = (function() {
-
+var booter = (function () {
+	"use strict";
 	var myPrivate;
 
 	myPrivate = function (arg) {
@@ -22,13 +22,13 @@ var booter = (function() {
 		base_url: '/Booter/',//Should be same as CI's base_url in config.php
 
 		icon: function (name, color, attr) {
-			var img = new Image;
+			var img = new Image();
 			color = color || 'gray';
 			attr = attr || {};
-			img.src = booter.base_url + 'assets/images/icons/'+color+'/'+name+'.png';
+			img.src = booter.base_url + 'assets/images/icons/' + color + '/' + name + '.png';
 			jQuery(img).attr(attr);
 			return img;
 		}
 	};
 
-})();
+}());
